@@ -37,9 +37,9 @@ export const createHeader = () => {
       img[key] = value
     })
 
-    button.append(img)
+    button.insertAdjacentElement('beforeend', img)
 
-    header.append(button)
+    header.insertAdjacentElement('beforeend', button)
   })
 
   return header

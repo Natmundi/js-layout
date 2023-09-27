@@ -1,0 +1,80 @@
+@use '../../style' as s;
+@use "../../style/layout.scss" as layout;
+
+.header2 {
+	display: flex;
+	justify-content: space-around;
+	font-size: 16px;
+	
+
+	&__button {
+		padding: 12px;
+		border-bottom: 3px solid rgb(189, 183, 183);
+		width: 170px;
+		transition: opacity 0.7s;
+		cursor: pointer;
+	
+		
+		&--active {
+			
+			width: 170px;
+			border-bottom: 3px solid black;
+			transition: opacity 0.7s;
+			cursor: pointer;
+		}
+
+		&:hover{
+			opacity: 0.7;
+		}
+
+		}
+
+	// &__title {
+	// 	font-size: 16px;
+	// 	color: rgb(183, 176, 176);
+	// }
+	// &__title--active {
+	// 	color: black;
+	// }
+ }	
+
+
+.post__list {
+	display: flex;
+	flex-direction: column;
+
+	
+	}
+
+	.card {
+		display: flex;
+		flex-direction: column;
+		gap: 28px;
+
+		&__title {
+			font-size: 20px;
+			font-weight: 500;
+		}
+
+		&__description {
+			color: rgb(82, 80, 80);
+			line-height: 1.5;
+			text-align: justify;
+		}
+
+		&__button {
+			background-color: rgb(227, 114, 22);
+			border-radius: 12px;
+			padding: 16px;
+			color: white;
+			transition: opacity 0.7s;
+
+			&:hover {
+				opacity: 0.7;
+			}
+		}
+		
+	}
+
+
+	
